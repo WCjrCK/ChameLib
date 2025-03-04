@@ -45,9 +45,9 @@ jobs:
         mkdir build
         cd build
         cmake ..
-        make
+        make -j8
 
     - name: test
       run: |
         cd build
-        ctest --verbose 
+        ctest --output-on-failure -j8
