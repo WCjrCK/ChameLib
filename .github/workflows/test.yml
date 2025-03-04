@@ -50,4 +50,13 @@ jobs:
     - name: test
       run: |
         cd build
-        ctest -VV
+        ./bin/CP_ABE_test 
+        ./bin/ABET_test  
+        ./bin/RABE_XNM_test  
+        ./bin/RABE_TMM_test  
+        ./bin/ID_B_CollRes_XSL_2021_test  
+        ./bin/MAPCH_ZLW_2021_test  
+        ./bin/PCH_DSS_2019_test  
+        ./bin/PCHBA_TLL_2020_test 
+        ./bin/RPCH_TMM_2022_test 
+        ./bin/RPCH_XNM_2021_test 
